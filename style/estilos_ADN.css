@@ -1,0 +1,68 @@
+body {
+  background-color: #d3e4c5;
+  margin: 0;
+}
+
+.titulo {
+  background-image: url(/statics/img/nuevo_fondo.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  padding-bottom:20%;
+  padding-left:20%;
+  padding-right:20%;
+  text-align: center;
+  margin-top: -1.5%;
+}
+
+#navegacion li {
+  display: inline-block;
+}
+#navegacion a {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: hsl(0, 0%, 0%);
+  border-radius:10cm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:focus {
+  color: #010101;
+}
+
+#navegacion li:hover {
+  text-shadow: 0 0px 5px rgb(251, 251, 251);
+}
+
+#navegacion {
+  display: inline-block;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#miCheckbox {
+  display: block;
+  align:center;
+}
+
+footer {
+  color: #d3e4c5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: end;
+  background-color: #010101 ;
+  padding: 5%;
+}
+
+main {
+}
+.formulario fieldset {
+  background-color:#fdfdfd;
+} 

@@ -1,0 +1,118 @@
+body {  
+  background-color: rgb(211, 228, 197);
+  margin: 0;
+}
+
+header{
+  background-image: url(/statics/img/nuevo_fondo.jpg);
+  background-size:100%;
+  background-repeat: repeat-y; /* Repetir solo horizontalmente */
+  animation: moverFondo 30s linear infinite;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  width: 84%;
+}
+.logo{
+  width: 15%;
+  display: flex;
+  border: 1px solid red;
+}
+.logo div{
+  display: flexbox;
+  background-color: rgba(1, 1, 1,1);
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+
+
+#navegacion {
+  display: flexbox;
+  border-radius: 3px;
+  width: 75%;
+  text-align: center;
+  border: 1px solid red;
+}
+#navegacion li {
+  align-items: center;
+  display: inline-block;
+}
+#navegacion a {
+  text-decoration: none;
+  display: block;
+  background-color: hsl(0, 0%, 0%);
+  border-radius:10cm;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:focus {
+  color: rgb(255, 255, 255);
+}
+#navegacion li:hover {
+  text-shadow: 0 0px 5px rgb(251, 251, 251);
+}
+
+@keyframes moverFondo {
+  0% {
+    background-position: 40% 0%; /* Posición inicial del fondo */
+  }
+  100% {
+    background-position: 50% 100%; /* Posición final del fondo (-100% para moverlo completamente fuera de la sección) */
+  }
+  0% {
+    background-position: 50% 0%;
+  }
+}
+
+.titulo {
+  
+  color: black;
+  padding:20%;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 650px) {
+  .titulo {
+    background-image: url(/statics/img/nuevo_fondo.jpg);
+    background-size:cover;
+    border-image-repeat: no-repeat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding:20%;
+    text-align: center;
+    margin-bottom: -10px;
+  }  
+  .titulo {
+    animation: none; /* Anular animación en pantallas más pequeñas */
+    background-color:rgb(255, 255, 255); /* Cambiar el color de fondo */
+  }
+}
+
+
+.seccion_Proyectos {
+border: 1px solid red;
+background: #010101;
+height: 50vh;
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 10px;
+}
+.proyecto {
+  background-color: gray;
+  height: 150px;
+  width: 150px;
+}
+
+footer {
+    color: #d3e4c5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: end;
+    background-color: #010101 ;
+    padding: 5%;
+  }
