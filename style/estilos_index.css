@@ -9,13 +9,19 @@ header{
   background-repeat: repeat-y; /* Repetir solo horizontalmente */
   animation: moverFondo 30s linear infinite;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: flex;
-  width: 84%;
+  display: block;
+  width: 100%;
 }
-.logo{
-  width: 15%;
+
+#barra_superior {
   display: flex;
-  border: 1px solid red;
+  flex-direction: row;
+}
+
+.logo{
+  width: 10%;
+  display: flex;
+  padding-bottom: 2%;
 }
 .logo div{
   display: flexbox;
@@ -27,11 +33,11 @@ header{
 
 
 #navegacion {
-  display: flexbox;
+  display: inline-block;
   border-radius: 3px;
-  width: 75%;
+  width: 80%;
   text-align: center;
-  border: 1px solid red;
+  padding-top: 1%;
 }
 #navegacion li {
   align-items: center;
@@ -91,22 +97,6 @@ a:focus {
     animation: none; /* Anular animación en pantallas más pequeñas */
     background-color:rgb(255, 255, 255); /* Cambiar el color de fondo */
   }
-}
-
-
-.seccion_Proyectos {
-border: 1px solid red;
-background: #010101;
-height: 50vh;
-display: flex;
-align-items: center;
-gap: 10px;
-padding: 10px;
-}
-.proyecto {
-  background-color: gray;
-  height: 150px;
-  width: 150px;
 }
 
 footer {
